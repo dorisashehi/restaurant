@@ -1,0 +1,78 @@
+@import "bootstrap/scss/bootstrap";
+
+#content{
+    height: 80vh;
+}
+
+.navbar{
+    .navbar-brand {
+        flex: 0 0 20%;
+        img{
+            height: 45px;
+        }
+    }
+    .navbar-nav{
+        a.nav-link{
+            font-size: 17px;
+        }
+    }
+}
+
+.btn-outline-primary:hover {
+    color: #4d5969;
+    background-color: #ffc554;
+    border-color: #ffc554;
+}
+
+.btn-primary:hover, :not(.btn-check) + .btn:active {
+    color: #4d5969;
+    background-color: #ffb82e;
+    border-color: #ffb421;
+}
+.btn-outline-primary, .btn-primary {
+    border-color: #ffc554;
+    color: #ffc554;
+}
+.btn-outline-primary, .btn-primary{
+    padding: 12px 38px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-primary {
+    color: #4d5969;
+    background-color: #ffc554;
+    border-color: #ffc554;
+}
+
+footer{
+    background-color: #0b1727;
+
+    .container{
+        img{
+            height: 45px;
+        }
+
+        img.footer-logo{
+            width: 122px;
+            height: 325px;
+        }
+        .column-3, .column-4{
+            p{
+                color: #525b6a;
+                a{
+                    text-decoration: none;
+                }
+            }
+            h6{
+                color: #fff;
+            }
+        }
+
+    }
+    .copyright{
+        background-color: #000;
+        color: #5e6e82;
+        font-size: 20px;
+    }
+}
