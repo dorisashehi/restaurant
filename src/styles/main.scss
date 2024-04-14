@@ -2,8 +2,10 @@
 
 @import "fonts.scss";
 
+
+//layout
 #content{
-    height: 1013px;
+    height: 1900px;
 }
 
 .navbar{
@@ -119,15 +121,46 @@ footer{
                 p{
                     color: #5e6e82;
                     font-size: 1rem;
-                    font-family: Inconsolata,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                    font-family: "Inconsolata";
                 }
             }
             h1{
                 line-height: 1.5;
                 font-size: 2.4rem;
-                font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                font-family: "Merriweather";
             }
         }
 
     }
+}
+
+//Menu section
+.container.menu{
+    ul.list{
+        gap: 30px;
+        font-weight: bold;
+        font-family: "Inconsolata";
+        text-decoration: none;
+        list-style: none;
+        font-size: 1.3em;
+    }
+
+    .menu-item-content{
+        padding: 20px 30px;
+        h6{
+            font-size: 1rem;
+            color: #000;
+            font-family: "Merriweather";
+            font-weight: bold;
+
+        }
+        p{
+            color: #748194;
+            font-family: "Inconsolata";
+            font-size: 1rem;
+        }
+
+    }
+
+
 }
