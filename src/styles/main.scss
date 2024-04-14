@@ -1,10 +1,13 @@
 @import "bootstrap/scss/bootstrap";
 
+@import "fonts.scss";
+
 #content{
-    height: 80vh;
+    height: 1013px;
 }
 
 .navbar{
+    z-index: 2;
     .navbar-brand {
         flex: 0 0 20%;
         img{
@@ -14,6 +17,7 @@
     .navbar-nav{
         a.nav-link{
             font-size: 17px;
+            color: rgba(255,255,255,.7) !important;
         }
     }
 }
@@ -74,5 +78,56 @@ footer{
         background-color: #000;
         color: #5e6e82;
         font-size: 20px;
+    }
+}
+
+//home style
+
+.hero{
+    height: 100vh;
+    .hero-image{
+        padding-left: 0px;
+        background-image: url("http://localhost:3000/yellow-banner.png");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: 35%;
+        position: absolute;
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+    }
+    .row{
+
+        .column-left{
+            z-index: 2;
+
+            img.plate{
+                width: 500px;
+                position: relative;
+                left: 4em;
+                top: 4em;
+            }
+        }
+        .column-right{
+            margin: auto;
+            .row{
+                width: 34vw;
+                p{
+                    color: #5e6e82;
+                    font-size: 1rem;
+                    font-family: Inconsolata,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                }
+            }
+            h1{
+                line-height: 1.5;
+                font-size: 2.4rem;
+                font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            }
+        }
+
     }
 }

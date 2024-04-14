@@ -31,15 +31,7 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)/, //to allow using images
-                use: [
-                    {
-                      loader: 'file-loader',
-                      options: {
-                        name: '[name].[ext]',
-                        outputPath: 'images/', // specify the output directory for images
-                      },
-                    },
-                ],
+                type: 'asset/resource'
             }
         ]
     },
