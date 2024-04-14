@@ -1,6 +1,7 @@
 import yellowBanner from '../assets/yellow-banner.png'
 import plate from '../assets/plate.png'
 //import logo from './assets/logo.png';
+import menuList from '../menu-list.js'
 
 const content = document.getElementById("content");
 
@@ -40,282 +41,18 @@ const getHeroSection = () => {
 
 const getMenu = () => {
 
-    const menuItems = [
-        {
-            category: "Breakfast",
-            items: [
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                // Add more breakfast items as needed
-            ],
-            category: "Lunch",
-            items: [
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                // Add more breakfast items as needed
-            ],
-
-            category: "Dinner",
-            items: [
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                // Add more breakfast items as needed
-            ],
-
-
-            category: "Deserts",
-            items: [
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                // Add more breakfast items as needed
-            ],
-            category: "Drinks",
-            items: [
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BOWL",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "EGG SANDWICH",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                    {
-                        name: "BREAKFAST BURRITO",
-                        price: "$115",
-                        description: "Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)",
-                    },
-                // Add more breakfast items as needed
-            ],
-        },
-    ]
-
 
 
     const menu = `
-
         <div class="container menu">
             <div class="row">
                 <div class="menu">
                     <ul class="list d-flex justify-content-center">
-                        <li class="item">Breeakfast</li>
-                        <li class="item">Lunch</li>
-                        <li class="item">Dinner</li>
-                        <li class="item">Deserts</li>
-                        <li class="item">Drinks</li>
                     </ul>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-lg-4">
+                <div class="col-lg-4 menu-content">
                     <div class="menu-item-content">
                         <h6>BREAKFAST BOWL</h6>
                         <p>Black Bean Cake, Greens, Tomato & Avocado Pico drizzled with Lime Cream (Add egg $1)</p>
@@ -360,10 +97,32 @@ const getMenu = () => {
 
             </div>
         </div>
-    `
+    `;
         content.insertAdjacentHTML('afterbegin',menu);
 
+        //put menu titles
+        const menuTitle = menuList.map(item => getTitle(item)).join('');
+        document.querySelector('.list').innerHTML = menuTitle;
 
+
+        //add listener for each title of menu
+        // const menuItems = document.querySelectorAll('.item');
+        // let tt = [];
+        // Array.from(menuItems).map(item => {
+        //     item.addEventListener("click", (e) => {
+        //         //console.log(e.target.innerText);
+        //         tt = menuList.filter(category => {
+        //             e.target.innerText.toLowerCase() === category.category
+        //             //console.log(category.category.toLowerCase())
+        //         });
+        //     })
+        // });
+        // console.log(tt)
+
+}
+
+function getTitle(item){
+    return `<li class="item">${item.category}</li>`
 }
 
 function getHome(){
