@@ -100,29 +100,31 @@ const getMenu = () => {
     `;
         content.insertAdjacentHTML('afterbegin',menu);
 
-        //put menu titles
-        const menuTitle = menuList.map(item => getTitle(item)).join('');
-        document.querySelector('.list').innerHTML = menuTitle;
 
+        //create menu categories and add event listeners for click
+        const menuCategories = document.querySelector('.list');
+        menuList.forEach(item => {
+            const menuCategory = document.createElement("li");
+            menuCategory.classList.add("item");
+            menuCategory.textContent = item.category;
+            menuCategory.addEventListener("click", (e) => { console.log("hello")
+                getMenuMeals(e); //get content of them on click
+            })
+            menuCategories.appendChild(menuCategory);
+        });
 
-        //add listener for each title of menu
-        // const menuItems = document.querySelectorAll('.item');
-        // let tt = [];
-        // Array.from(menuItems).map(item => {
-        //     item.addEventListener("click", (e) => {
-        //         //console.log(e.target.innerText);
-        //         tt = menuList.filter(category => {
-        //             e.target.innerText.toLowerCase() === category.category
-        //             //console.log(category.category.toLowerCase())
-        //         });
-        //     })
-        // });
-        // console.log(tt)
 
 }
 
-function getTitle(item){
-    return `<li class="item">${item.category}</li>`
+const getMenuMeals = (e) => {
+
+    let menuFiltered = menuList.find(menu => menu.category === e.target.innerText);
+    menuFiltered.items.forEach(content => { console.log("asdsa"+content.name)
+
+    })
+
+    debugger
+    //console.log(tt)
 }
 
 function getHome(){
