@@ -41,18 +41,24 @@ const getHeroSection = () => {
 const getMenu = () => {
 
     const menu = `
-        <div class="container menu">
-            <div class="row">
-                <div class="menu">
-                    <ul class="list d-flex justify-content-center">
-                    </ul>
+
+        <section>
+            <div class="container menu">
+                <div class="egg-image"></div>
+                <div class="bread-image"></div>
+                <div class="row">
+                    <div class="menu">
+                        <ul class="list d-flex justify-content-center">
+                        </ul>
+                    </div>
                 </div>
+                <div class="row mt-5">
+                    <div class="columns-container"></div>
+                </div>
+
             </div>
-            <div class="row mt-5">
-                <div class="columns-container"></div>
-            </div>
-        </div>
-    `;
+        </section>
+`;
     content.insertAdjacentHTML('afterbegin',menu);
 
     putMenuItemListeners();
