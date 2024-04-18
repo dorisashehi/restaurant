@@ -274,9 +274,8 @@ const putMenuItemListeners = () => {
 const getMenuMeals = (el) => {
 
     let column = document.createElement("div");
-    let menuFiltered = menuList.find(menu => menu.category === el);
+    let menuFiltered = menuList.find(menu => menu.category.trim().toLowerCase() === el.trim().toLowerCase());
     menuFiltered.items.forEach(content => {
-
 
         column.classList.add("d-flex", "flex-wrap", "menu-content");
         let menuItemContent = document.createElement("div");
