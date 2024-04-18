@@ -4,6 +4,7 @@ import {getContacts} from '../Contacts/index.js'
 import getMenu from '../Menu/index.js'
 import '../../assets/yellow-banner.png'
 import './style.scss'
+import getModal from '../Modal/index.js'
 
 const content = document.getElementById("content");
 
@@ -42,6 +43,7 @@ const getHeroSection = () => {
 }
 
 const getHome = () =>{
+    getModal()
     getContacts()
     getAbout()
     getMenu();

@@ -1,6 +1,5 @@
 import './style.scss'
 
-
 const content = document.getElementById("content");
 
 const getContacts = () => {
@@ -60,7 +59,7 @@ const getContacts = () => {
                         <p class="card-text">
                             9:00 am to 9:00 pm
                         </p>
-                        <button class="btn btn-primary mt-5" type="submit">Make a reservation</button>
+                        <button class="btn btn-primary mt-5 open-modal" type="submit">Make a reservation</button>
                     </div>
                 </div>
             </div>
