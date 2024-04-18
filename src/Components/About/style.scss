@@ -1,0 +1,26 @@
+.about-section{
+    position: relative;
+    min-height: 800px;
+    .soup-image{
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        background-position: right center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/soup.png);
+
+    }
+    h6{
+        color: #232e3c;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .profile{
+        width: 200px;
+        height: 200px;
+        border-radius: 7em;
+    }
+}

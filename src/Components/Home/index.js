@@ -1,5 +1,6 @@
 import plate from '../../assets/plate.png'
 import {putMenuItemListeners} from '../../menu-list.js'
+import { getAbout } from '../About/index.js'
 import '../../assets/yellow-banner.png'
 import './style.scss'
 
@@ -10,7 +11,7 @@ const getHeroSection = () => {
     const heroContent =`
         <div class="container-fluid hero">
             <div class="hero-image"></div>
-            <div class="row">
+            <div class="row min-vh-100">
                 <div class="column-left col-lg-5">
                    <img src=${plate} class="plate"/>
                 </div>
@@ -60,6 +61,7 @@ const getMenu = () => {
 
 
 const getHome = () =>{
+    getAbout()
     getMenu();
     getHeroSection();
 }

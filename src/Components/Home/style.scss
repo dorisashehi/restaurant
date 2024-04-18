@@ -1,5 +1,48 @@
+//home style
+
+.hero{
+    height: 100vh;
+    min-height: 650px;
+    .hero-image{
+        padding-left: 0px;
+        background-image: url("http://localhost:3000/yellow-banner.png");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: 35%;
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+    }
+    .row{
+
+        .column-left{
+            z-index: 2;
+
+            img.plate{
+                width: 500px;
+                position: relative;
+                left: 4em;
+                top: 4em;
+            }
+        }
+        .column-right{
+            margin: auto;
+            .row{
+                width: 34vw;
+            }
+        }
+
+    }
+}
+
+
 //Menu section
 .container.menu{
+    min-height: 700px;
     ul.list{
         gap: 30px;
         font-weight: bold;
@@ -7,10 +50,13 @@
         text-decoration: none;
         list-style: none;
         font-size: 1.3em;
+        .item{
+            color: #9da9bb;
+        }
     }
 
     .menu-item-content{
-        padding: 20px 30px;
+        padding: 20px 70px;
         position: relative;
         h6{
             font-size: 1rem;

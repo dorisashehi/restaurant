@@ -5,7 +5,7 @@
 
 //layout
 #content{
-    height: 1900px;
+    height: fit-content
 }
 
 .navbar{
@@ -83,53 +83,24 @@ footer{
     }
 }
 
-//home style
 
-.hero{
-    height: 100vh;
-    .hero-image{
-        padding-left: 0px;
-        background-image: url("http://localhost:3000/yellow-banner.png");
-        background-repeat: no-repeat;
-        height: 100vh;
-        background-size: 35%;
-        position: absolute;
-        position: absolute;
-        width: 100%;
-        min-height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
-
-    }
-    .row{
-
-        .column-left{
-            z-index: 2;
-
-            img.plate{
-                width: 500px;
-                position: relative;
-                left: 4em;
-                top: 4em;
-            }
-        }
-        .column-right{
-            margin: auto;
-            .row{
-                width: 34vw;
-                p{
-                    color: #5e6e82;
-                    font-size: 1rem;
-                    font-family: "Inconsolata";
-                }
-            }
-            h1{
-                line-height: 1.5;
-                font-size: 2.4rem;
-                font-family: "Merriweather";
-            }
-        }
-
-    }
+//paragreph
+p{
+    color: #5e6e82;
+    font-size: 1rem;
+    font-family: "Inconsolata";
+}
+h2{
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-family: "Merriweather";
+    font-weight: bold;
+}
+h1{
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-family: "Merriweather";
+}
+.btn.btn-primary{
+    width: fit-content
 }
