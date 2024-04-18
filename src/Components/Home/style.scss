@@ -1,0 +1,36 @@
+//Menu section
+.container.menu{
+    ul.list{
+        gap: 30px;
+        font-weight: bold;
+        font-family: "Inconsolata";
+        text-decoration: none;
+        list-style: none;
+        font-size: 1.3em;
+    }
+
+    .menu-item-content{
+        padding: 20px 30px;
+        position: relative;
+        h6{
+            font-size: 1rem;
+            color: #000;
+            font-family: "Merriweather";
+            font-weight: bold;
+
+        }
+        p{
+            color: #748194;
+            font-family: "Inconsolata";
+            font-size: 1rem;
+        }
+        span.menu-item-price{
+
+            position: absolute;
+            right: 30px;
+            color: #ff806e;
+            font-family: "Inconsolata";
+            font-weight: bold;
+        }
+    }
+}

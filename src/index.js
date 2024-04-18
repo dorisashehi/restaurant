@@ -6,7 +6,7 @@ import './styles/main.scss'
 // const lauImg = document.getElementById('laughImg')
 // lauImg.src = logo
 
-import getHome from './modules/home';
+import getHome from './Components/Home/index';
 
 const currentPage = "home"
 
