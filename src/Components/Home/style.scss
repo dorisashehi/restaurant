@@ -44,6 +44,10 @@
 .container.menu{
     min-height: 700px;
     position: relative;
+    .menu{
+        position: relative;
+        z-index: 2;
+    }
     ul.list{
         gap: 30px;
         font-weight: bold;

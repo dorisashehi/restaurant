@@ -42,7 +42,7 @@ const getMenu = () => {
 
     const menu = `
 
-        <section>
+        <section class="py-5">
             <div class="container menu">
                 <div class="egg-image"></div>
                 <div class="bread-image"></div>

@@ -275,17 +275,21 @@ const getMenuMeals = (el) => {
 
     let column = document.createElement("div");
     let menuFiltered = menuList.find(menu => menu.category.trim().toLowerCase() === el.trim().toLowerCase());
+
     menuFiltered.items.forEach(content => {
 
         column.classList.add("d-flex", "flex-wrap", "menu-content");
+
         let menuItemContent = document.createElement("div");
         menuItemContent.classList.add("menu-item-content", "col-lg-4");
 
         let menuPrice = document.createElement("span");
         menuPrice.textContent = content.price;
         menuPrice.classList.add("menu-item-price");
+
         let menuItemHeader = document.createElement("h6");
         menuItemHeader.textContent = content.name;
+
         let menuItemDescription = document.createElement("p");
         menuItemDescription.textContent = content.description;
 
