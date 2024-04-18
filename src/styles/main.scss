@@ -87,8 +87,14 @@ footer{
 //paragreph
 p{
     color: #5e6e82;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Inconsolata";
+}
+h6{
+    color: #000;
+    font-family: "Merriweather";
+    font-weight: bold;
+
 }
 h2{
     line-height: 1.5;
@@ -103,4 +109,20 @@ h1{
 }
 .btn.btn-primary{
     width: fit-content
+}
+.section-header{
+    color: #232e3c;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Inconsolata";
+    margin-bottom: 0px;
+
+}
+
+section.about-section{
+    margin-top: 10em;
+}
+
+section.contacts-section{
+    margin-top: 10em;
 }

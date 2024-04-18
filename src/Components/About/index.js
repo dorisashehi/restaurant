@@ -7,18 +7,18 @@ const getAbout = () => {
 
     const aboutContent = `
 
-        <section class="about-section py-5">
+        <section class="about-section">
             <div class="soup-image"></div>
             <div class="container">
                 <div class="row">
                     <div class="column-left col-lg-6">
                         <div class="row">
-                            <h6>About Us</h6>
+                            <p class="section-header">About Us</p>
                             <h2>Who Are We?</h2>
                             <p>We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
-                            <button class="btn btn-primary" type="submit">Learn More</button>
+                            <button class="btn btn-primary mt-3" type="submit">Learn More</button>
                         </div>
-                        <div class="row flex-wrap team-content"></div>
+                        <div class="row flex-wrap team-content mt-5"></div>
                     </div>
 
                 </div>
