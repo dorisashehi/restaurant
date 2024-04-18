@@ -3,6 +3,21 @@
 @import "fonts.scss";
 
 
+body{
+    position: relative;
+
+    .scroll-top{
+        position: fixed;
+        text-decoration: none;
+        background-color: #ffb82e;
+        padding: 8px;
+        border-radius: 0.5em;
+        right: 30px;
+        bottom: 15px;
+        z-index: 2;
+    }
+}
+
 //layout
 #content{
     height: fit-content
@@ -17,9 +32,16 @@
         }
     }
     .navbar-nav{
+        .nav-item{
+            padding-right: 20px;
+        }
         a.nav-link{
-            font-size: 17px;
+            font-size: 1.2rem;
             color: rgba(255,255,255,.7) !important;
+            font-family: "Inconsolata";
+        }
+        a.nav-link:hover{
+            color: rgba(255,255,255,.8) !important;
         }
     }
 }

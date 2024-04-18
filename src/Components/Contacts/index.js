@@ -7,7 +7,7 @@ const getContacts = () => {
 
     const contactsContent = `
 
-        <section class="contacts-section d-flex">
+        <section class="contacts-section d-flex" id="contacts">
             <div class="green-image"></div>
             <div class="container">
                 <div class="row text-center mb-5">

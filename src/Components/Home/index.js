@@ -10,7 +10,7 @@ const content = document.getElementById("content");
 const getHeroSection = () => {
 
     const heroContent =`
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="container-fluid hero">
                 <div class="hero-image"></div>
                 <div class="row min-vh-100">

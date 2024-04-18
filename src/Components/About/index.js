@@ -7,7 +7,7 @@ const getAbout = () => {
 
     const aboutContent = `
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="soup-image"></div>
             <div class="container">
                 <div class="row">
