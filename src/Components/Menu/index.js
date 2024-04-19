@@ -6,11 +6,11 @@ const getMenu = () => {
     const menu = `
 
         <section classs="menu-section" id="menu">
-            <div class="row text-center mb-5">
-                <p class="section-header">Menu</p>
-                <h2 class="contact-title">Taste Our Foods & Enjoy</h2>
-            </div>
             <div class="container menu">
+                <div class="row text-center mb-5">
+                    <p class="section-header">Menu</p>
+                    <h2 class="contact-title">Taste Our Foods & Enjoy</h2>
+                </div>
                 <div class="egg-image"></div>
                 <div class="bread-image"></div>
                 <div class="row">
