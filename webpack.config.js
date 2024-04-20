@@ -32,7 +32,7 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)/, //to allow using images
                 type: 'asset/resource'
-            }
+            },
         ]
     },
     devtool: 'inline-source-map',

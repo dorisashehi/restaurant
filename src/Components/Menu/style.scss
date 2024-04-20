@@ -57,35 +57,24 @@
 
 
 
-// @media screen and (max-width:481px){
 
-//     //Menu section
+// @media screen and (max-width:576px){
+
+
 //     .container.menu{
 //         .bread-image{
-//            display: none;
+//             display: none;
 //         }
 //     }
 
 // }
 
+// @media screen and (min-width:576px){
 
-@media screen and (max-width:576px){
+//     .container.menu{
+//         .bread-image{
+//             display: none;
+//         }
+//     }
 
-
-    .container.menu{
-        .bread-image{
-            display: none;
-        }
-    }
-
-}
-
-@media screen and (min-width:576px){
-
-    .container.menu{
-        .bread-image{
-            display: none;
-        }
-    }
-
-}
+// }

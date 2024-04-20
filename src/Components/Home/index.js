@@ -15,10 +15,10 @@ const getHeroSection = () => {
             <div class="container-fluid hero">
                 <div class="hero-image"></div>
                 <div class="row hero-content">
-                    <div class="column-left col col-md-5 col-lg-5">
+                    <div class="column-left col-lg-5 col-md-5 col-sm-12">
                     <img src=${plate} class="plate"/>
                     </div>
-                    <div class="column-right col-md-7 col-lg-7">
+                    <div class="column-right col-lg-7 col-md-7 col-sm-12">
                         <div class="row">
                             <h1 class="introduction-header">The Spectacle <b>Before Us</b></br>
                                 <b>Was Indeed</b> Sublime.
@@ -43,10 +43,10 @@ const getHeroSection = () => {
 }
 
 const getHome = () =>{
-    getModal()
-    getContacts()
-    getAbout()
-    getMenu();
-    getHeroSection();
+    // getModal()
+    // getContacts()
+    // getAbout()
+    // getMenu();
+    //getHeroSection();
 }
 export default getHome

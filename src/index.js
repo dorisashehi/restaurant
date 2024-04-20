@@ -1,5 +1,6 @@
 // Import our custom CSS
 import './styles/main.scss'
+
 //import '@fortawesome/fontawesome-free/css/all.css';
 
 // import logo from './assets/logo.png';
