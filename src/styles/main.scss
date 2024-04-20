@@ -62,8 +62,6 @@ body{
     color: #ffc554;
 }
 .btn-outline-primary, .btn-primary{
-    padding: 12px 38px;
-    font-size: 17px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -147,4 +145,107 @@ section.about-section{
 
 section.contacts-section{
     margin-top: 10em;
+}
+
+
+@media screen and (max-width:576px){
+    .btn-outline-primary, .btn-primary{
+        padding: 12px 19px;
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+
+    footer{
+        .container{
+            .column-1{
+                display: none;
+            }
+        }
+        .footer-text{
+            text-align: left;
+        }
+    }
+
+}
+
+
+@media screen and (min-width:576px){
+    .btn-outline-primary, .btn-primary{
+        padding: 12px 19px;
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+
+    footer{
+        .container{
+            .column-1{
+                display: none;
+            }
+        }
+        .footer-text{
+            text-align: left;
+        }
+    }
+
+
+}
+
+@media screen and (min-width:992px){
+    footer{
+        .container{
+            .column-1{
+                display: block;
+            }
+        }
+    }
+
+    .btn-outline-primary, .btn-primary{
+        padding: 10px 32px;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 2.4rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+
+
 }

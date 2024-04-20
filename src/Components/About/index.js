@@ -11,13 +11,11 @@ const getAbout = () => {
             <div class="soup-image"></div>
             <div class="container">
                 <div class="row">
-                    <div class="column-left col-lg-6">
-                        <div class="row">
-                            <p class="section-header">About Us</p>
-                            <h2>Who Are We?</h2>
-                            <p>We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
-                            <button class="btn btn-primary mt-3" type="submit">Learn More</button>
-                        </div>
+                    <div class="column-left col-md-12 col-lg-6 col-xl-6">
+                        <p class="section-header">About Us</p>
+                        <h2>Who Are We?</h2>
+                        <p>We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
+                        <button class="btn btn-primary mt-3" type="submit">Learn More</button>
                         <div class="row flex-wrap team-content mt-5"></div>
                     </div>
 
@@ -37,7 +35,7 @@ const showTeam = () => {
     team.forEach((team) => {
 
         const teamContainer = document.createElement("div");
-        teamContainer.classList.add("col-lg-4", "mt-4", "text-center");
+        teamContainer.classList.add("col-md-6","col-lg-6","col-xl-4", "mt-4", "text-center");
 
         const teamImage = document.createElement("img");
         teamImage.src = team.image

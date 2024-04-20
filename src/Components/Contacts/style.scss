@@ -50,7 +50,7 @@
         .constacts-content{
             div{
                 background: white;
-                max-width: 400px;
+                // max-width: 400px;
                 border-radius: 0.5em;
                 box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.19)
             }
@@ -70,4 +70,61 @@
             border-color: #ff806e;
         }
     }
+}
+
+
+// @media screen and (max-width:481px){
+// .contacts-section{
+
+//     .green-image{
+//         display: none;
+//     }
+
+//     .container{
+//         .constacts-content{
+//             div{
+//                 max-width: 380px;
+
+//             }
+//         }
+
+//     }
+
+// }}
+
+
+@media screen and (max-width:576px){
+
+
+    .contacts-section{
+
+        .green-image{
+            display: none;
+        }
+    }
+
+}
+@media screen and (min-width:576px){
+
+    .contacts-section{
+
+        .green-image{
+            display: none;
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width:992px){
+
+
+    .contacts-section{
+
+        .green-image{
+            display: block;
+        }
+    }
+
 }

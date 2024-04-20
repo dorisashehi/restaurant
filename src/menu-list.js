@@ -281,7 +281,7 @@ const getMenuMeals = (el) => {
         column.classList.add("d-flex", "flex-wrap", "menu-content");
 
         let menuItemContent = document.createElement("div");
-        menuItemContent.classList.add("menu-item-content", "col-lg-4");
+        menuItemContent.classList.add("menu-item-content", "col-md-6","col-lg-4");
 
         let menuPrice = document.createElement("span");
         menuPrice.textContent = content.price;
