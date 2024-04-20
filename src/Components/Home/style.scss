@@ -1,8 +1,15 @@
 //home style
 
+#content{
+    margin-top: 80px;
+    .hero-section{
+        padding: 30px 15px;
+    }
+}
 .hero{
     // height: 100vh;
     // min-height: 650px;
+    padding: 0px;
     .hero-image{
         padding-left: 0px;
         background-image: url("http://localhost:3000/yellow-banner.png");
@@ -16,28 +23,38 @@
         display: none;
 
     }
+    .hero-content{
+        text-align: center;
+    }
     .row{
 
         .column-left{
             z-index: 2;
             order: 2;
+            margin-top: 10px;
 
             img.plate{
                 position: relative;
-                left: 4em;
-                top: 4em;
+                // left: 4em;
+                // top: 4em;
+                width: 250px;
             }
         }
         .column-right{
             margin: auto;
             order: 1;
             .row{
-               // width: 34vw;
+
                 .introduction-header{
-                    text-align: left;
+                    text-align: center;
+                    font-size: 1.5rem;
                 }
                 .introduction{
                     display: none;
+
+                }
+                .introduction-buttons{
+                    justify-content: center;
                 }
             }
         }
@@ -146,7 +163,42 @@
 // }
 
 
+@media screen and (min-width:767px){
+    .hero{
+        .row{
 
+            .column-left{
+
+                order: 2;
+                margin-top: 0px;
+            }
+            .column-right{
+
+                order: 2;
+                .row{
+                   // width: 34vw;
+                   max-width: 400px;
+                    .introduction-header{
+                        text-align: left;
+                        font-size: 2rem;
+                    }
+                    .introduction{
+                        display: block;
+                        font-size: 1rem;
+                        text-align: left;
+
+                    }
+                    .introduction-buttons{
+                        justify-content: start;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
 
 @media screen and (min-width:1200px){
 
@@ -155,6 +207,28 @@
         // min-height: 650px;
         .hero-image{
             display: block;
+        }
+    }
+    #content .hero-section {
+        padding: 0px;
+    }
+
+    .hero{
+        .row{
+            .column-left{
+                img.plate{
+                    width: 60%;
+                    top: 5em;
+                }
+            }
+            .column-right{
+                .row{
+                    max-width: 560px;
+                }
+            }
+        }
+        .hero-content{
+            min-height: 600px;
         }
     }
 

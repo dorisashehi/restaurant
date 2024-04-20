@@ -24,8 +24,9 @@ body{
 }
 
 .navbar{
-    z-index: 2;
+    z-index: 3;
     padding: 17px 0px;
+
     .navbar-brand {
         flex: 0 0 20%;
         img{
@@ -80,11 +81,13 @@ body{
 .btn-outline-primary, .btn-primary{
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 0.7rem;
 }
 .btn-primary {
     color: #4d5969;
     background-color: #ffc554;
     border-color: #ffc554;
+
 }
 
 footer{
@@ -163,6 +166,21 @@ section.contacts-section{
     margin-top: 10em;
 }
 
+@media screen and (min-width:767px){
+    h1{
+        font-size: 2rem;
+    }
+    .collapse:not(.show) {
+        display: block;
+    }
+}
+@media screen and (min-width:1200px){
+    .btn-outline-primary, .btn-primary{
+        padding: 10px 32px;
+        font-size: 15px;
+    }
+
+}
 
 // @media screen and (max-width:576px){
 //     .btn-outline-primary, .btn-primary{
