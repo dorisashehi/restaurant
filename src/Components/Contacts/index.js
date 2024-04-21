@@ -4,7 +4,10 @@ const content = document.getElementById("content");
 
 const getContacts = () => {
 
-    const contactsContent = `
+
+    const contactsContent = document.createElement('div');
+
+    contactsContent.innerHTML = `
 
         <section class="contacts-section d-flex" id="contacts">
             <div class="green-image"></div>
@@ -66,7 +69,7 @@ const getContacts = () => {
         <section>
 
     `;
-    content.insertAdjacentHTML('afterbegin',contactsContent);
+    content.appendChild(contactsContent);
 
 }
 

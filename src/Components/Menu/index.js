@@ -3,7 +3,9 @@ import './style.scss';
 
 const getMenu = () => {
 
-    const menu = `
+    const menu = document.createElement('div');
+
+    menu.innerHTML = `
 
         <section class="menu-section" id="menu">
             <div class="container menu">
@@ -26,7 +28,7 @@ const getMenu = () => {
             </div>
         </section>
 `;
-    content.insertAdjacentHTML('afterbegin',menu);
+    content.appendChild(menu);
 
     putMenuItemListeners();
 

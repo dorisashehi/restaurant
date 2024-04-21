@@ -5,7 +5,8 @@ const content = document.getElementById("content");
 
 const getAbout = () => {
 
-    const aboutContent = `
+    const aboutContent = document.createElement('div');
+    aboutContent.innerHTML = `
 
         <section class="about-section" id="about">
             <div class="soup-image"></div>
@@ -24,7 +25,7 @@ const getAbout = () => {
         <section>
 
     `;
-    content.insertAdjacentHTML('afterbegin',aboutContent);
+    content.appendChild(aboutContent);
     showTeam();
 
 }

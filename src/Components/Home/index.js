@@ -10,7 +10,9 @@ const content = document.getElementById("content");
 
 const getHeroSection = () => {
 
-    const heroContent =`
+
+    const heroContent = document.createElement('div');
+    heroContent.innerHTML = `
         <section class="hero-section" id="home">
             <div class="container-fluid hero">
                 <div class="hero-image"></div>
@@ -36,17 +38,17 @@ const getHeroSection = () => {
                 </div>
             </div>
         </section>
-    `
+    `;
 
-    content.insertAdjacentHTML('afterbegin',heroContent);
+    content.appendChild(heroContent);
 
 }
 
 const getHome = () =>{
-    // getModal()
-    getContacts()
-    getAbout()
-    getMenu();
     getHeroSection();
+    getMenu();
+    getAbout();
+    getContacts();
+    // getModal()
 }
 export default getHome
