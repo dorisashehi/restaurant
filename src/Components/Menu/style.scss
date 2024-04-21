@@ -1,5 +1,8 @@
 
 //Menu section
+// section.menu-section{
+//     padding-top: 60px;
+// }
 .container.menu{
     min-height: 800px;
     position: relative;
@@ -17,11 +20,14 @@
         font-size: 1.3em;
         .item{
             color: #9da9bb;
+            span{
+                display: none;
+            }
         }
     }
 
     .menu-item-content{
-        padding: 20px 70px;
+        padding: 0px 25px;
         position: relative;
 
         span.menu-item-price{
@@ -52,29 +58,41 @@
         background-size: 37%;
         background-position: left bottom;
         left: 0px;
+        display: none;
     }
 }
 
 
+@media screen and (min-width:767px){
+    section.menu-section{
+        padding-top: 80px;
+    }
+
+    .container.menu{
+        ul.list{
+            .item{
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+}
 
 
-// @media screen and (max-width:576px){
+@media screen and (min-width:992px){
+    .container.menu{
 
+        .menu-item-content{
+            padding: 20px 70px;
+        }
+    }
+}
 
-//     .container.menu{
-//         .bread-image{
-//             display: none;
-//         }
-//     }
-
-// }
-
-// @media screen and (min-width:576px){
-
-//     .container.menu{
-//         .bread-image{
-//             display: none;
-//         }
-//     }
-
-// }
+@media screen and (min-width:1200px){
+    .container.menu{
+        .bread-image{
+            display: block;
+        }
+    }
+}

@@ -46,7 +46,7 @@ const getHome = () =>{
     // getModal()
     // getContacts()
     // getAbout()
-    // getMenu();
+    getMenu();
     getHeroSection();
 }
 export default getHome

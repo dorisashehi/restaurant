@@ -4,11 +4,10 @@
     margin-top: 80px;
     .hero-section{
         padding: 30px 15px;
+        position: relative;
     }
 }
 .hero{
-    // height: 100vh;
-    // min-height: 650px;
     padding: 0px;
     .hero-image{
         padding-left: 0px;
@@ -35,8 +34,6 @@
 
             img.plate{
                 position: relative;
-                // left: 4em;
-                // top: 4em;
                 width: 250px;
             }
         }
@@ -63,112 +60,10 @@
 }
 
 
-
-// @media screen and (max-width:576px){
-
-//     .hero{
-//         height: 65vh;
-//         min-height: auto;
-
-//         .hero-image{
-//             display: none;
-//         }
-//         .row{
-//             .column-left{
-//                 order: 2;
-
-//                 img.plate{
-//                     width: 300px;
-//                     left: 0px;
-//                     top: 0px;
-//                     padding-top: 40px;
-//                 }
-//             }
-//             .column-right{
-//                 order: 1;
-//                 padding-top: 60px;
-//                 .row{
-//                     width: 100vw;
-//                     text-align: center;
-//                     .introduction-header{
-//                         text-align: center;
-//                     }
-//                     .introduction-buttons{
-//                         justify-content: center;
-//                     }
-//                 }
-
-//             }
-//         }
-//     }
-
-// }
-
-// @media screen and (min-width:576px){
-//     .hero{
-
-//         .hero-image{
-//             display: none;
-//         }
-//         .hero-content{
-//             height: 100vh;
-//             max-height: 350px;
-
-//         }
-//         .row{
-//             .column-left{
-
-//                 img.plate{
-//                     width: 200px;
-//                 }
-//             }
-//             .column-right{
-//                 order: 1;
-//                 .row{
-//                     width: 50vw;
-//                 }
-
-//             }
-//         }
-//     }
-
-// }
-
-// @media screen and (min-width:992px){
-//     .hero{
-//         .hero-image{
-//             display: block;
-//         }
-//         .row{
-//             .column-left{
-//                 img.plate{
-//                     width: 207px;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
-// @media screen and (min-width:1200px){
-//     .hero{
-//         .row{
-//             .column-left{
-//                 img.plate{
-//                     width: 400px;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
 @media screen and (min-width:767px){
     .hero{
         .row{
-
             .column-left{
-
                 order: 2;
                 margin-top: 0px;
             }
@@ -176,8 +71,7 @@
 
                 order: 2;
                 .row{
-                   // width: 34vw;
-                   max-width: 400px;
+                   max-width: 550px;
                     .introduction-header{
                         text-align: left;
                         font-size: 2rem;
@@ -202,16 +96,18 @@
 
 @media screen and (min-width:1200px){
 
+    #content{
+        .hero-section{
+            padding: 0px;
+        }
+    }
+
     .hero{
-        // height: 100vh;
-        // min-height: 650px;
         .hero-image{
             display: block;
         }
     }
-    #content .hero-section {
-        padding: 0px;
-    }
+
 
     .hero{
         .row{
@@ -224,12 +120,20 @@
             .column-right{
                 .row{
                     max-width: 560px;
+                    .introduction-header{
+                        font-size: 2.5rem;
+                    }
+                    .introduction{
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }
         .hero-content{
-            min-height: 600px;
+            min-height: 700px;
         }
     }
+
+    section.hero-section{padding: 0px;}
 
 }

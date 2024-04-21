@@ -1,6 +1,7 @@
 const menuList = [
     {
         category: "breakfast",
+        icon: "fa-coffee",
         items: [
             {
                 name: "BREAKFAST BOWL",
@@ -53,6 +54,7 @@ const menuList = [
     },
     {
         category: "lunch",
+        icon: "fa-utensils",
         items: [
             {
                 name: "CHICKEN CAESAR SALAD",
@@ -103,6 +105,7 @@ const menuList = [
     },
     {
         category: "dinner",
+        icon: "fa-drumstick-bite",
         items: [
             {
                 name: "GRILLED SALMON",
@@ -153,6 +156,7 @@ const menuList = [
     },
     {
         category: "desserts",
+        icon: "fa-ice-cream",
         items: [
             {
                 name: "CHOCOLATE LAVA CAKE",
@@ -203,6 +207,7 @@ const menuList = [
     },
     {
         category: "drinks",
+        icon: "fa-cocktail",
         items: [
             {
                 name: "ICED LATTE",
@@ -261,10 +266,26 @@ const putMenuItemListeners = () => {
 
     menuList.forEach(item => {
         const menuCategory = document.createElement("li");
-        menuCategory.classList.add("item");
-        menuCategory.textContent = item.category.toUpperCase();
+        menuCategory.classList.add("item","d-flex","flex-lg-column","flex-md-column","align-items-center");
+        menuCategory.setAttribute('data-menu', item.category);
+
+
+        const iconContainer = document.createElement("div");
+
+        const textContainer = document.createElement("span");
+        textContainer.textContent = item.category.toUpperCase();
+
+        const iconCategory = document.createElement("i");
+        iconCategory.classList.add("fas", item.icon);
+
+        iconContainer.appendChild(iconCategory);
+        iconContainer.appendChild(textContainer);
+
+        menuCategory.innerHTML = iconContainer.innerHTML;
+
         menuCategory.addEventListener("click", (e) => {
-            getMenuMeals(e.target.innerText); //get content of them on click
+            getMenuMeals(e.currentTarget.dataset.menu); //get content of them on click
+
         })
         menuCategories.appendChild(menuCategory);
     });
@@ -274,7 +295,7 @@ const putMenuItemListeners = () => {
 const getMenuMeals = (el) => {
 
     let column = document.createElement("div");
-    let menuFiltered = menuList.find(menu => menu.category.trim().toLowerCase() === el.trim().toLowerCase());
+    let menuFiltered = menuList.find(menu => menu.category.trim().toLowerCase() === el);
 
     menuFiltered.items.forEach(content => {
 

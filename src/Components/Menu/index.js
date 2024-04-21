@@ -5,7 +5,7 @@ const getMenu = () => {
 
     const menu = `
 
-        <section classs="menu-section" id="menu">
+        <section class="menu-section" id="menu">
             <div class="container menu">
                 <div class="row text-center mb-5">
                     <p class="section-header">Menu</p>
