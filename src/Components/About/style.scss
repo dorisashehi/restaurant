@@ -11,6 +11,7 @@
         background-size: 40%;
         background-repeat: no-repeat;
         background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/soup.png);
+        display: none;
 
     }
     h6{
@@ -25,40 +26,10 @@
     }
 }
 
-
-
-
-// @media screen and (max-width:576px){
-
-
-//     .about-section{
-//         .soup-image{
-//             display: none;
-//         }
-//     }
-
-// }
-
-// @media screen and (min-width:576px){
-
-//     .about-section{
-//         .soup-image{
-//             display: none;
-//         }
-//         .team{
-//             width: 200px;
-//             height: 200px;
-//         }
-//     }
-
-// }
-
-// @media screen and (min-width:992px){
-
-//     .about-section{
-//         .soup-image{
-//             display: block;
-//         }
-//     }
-
-// }
+@media screen and (min-width:1200px){
+    .about-section{
+        .soup-image{
+            display: block;
+        }
+    }
+}

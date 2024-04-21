@@ -45,7 +45,7 @@ const getHeroSection = () => {
 const getHome = () =>{
     // getModal()
     // getContacts()
-    // getAbout()
+    getAbout()
     getMenu();
     getHeroSection();
 }
