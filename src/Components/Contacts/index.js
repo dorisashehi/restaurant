@@ -15,7 +15,7 @@ const getContacts = () => {
                 </div>
                 <div class="row flex-wrap constacts-content">
 
-                    <div class="card-body col-md col-lg-3 p-5">
+                    <div class="card-body col-md-4 col-lg-3 p-5">
                         <p class="card-text mb-3">
                             Av. Paz Soldán 290, San Isidro, Lima 27 - Peru
                         </p>
@@ -27,7 +27,7 @@ const getContacts = () => {
                         </p>
                     </div>
 
-                    <div class="card-body col-md col-lg-3 p-5">
+                    <div class="card-body col-md-4 col-lg-3 p-5">
                         <p class="card-title">
                             Hours of service
                         </p>
@@ -49,7 +49,7 @@ const getContacts = () => {
                         </p>
                     </div>
 
-                    <div class="card-body col-md col-lg-3 p-5">
+                    <div class="card-body col-md-4 col-lg-3 p-5">
                         <p class="card-title">
                             Telephone support:
                         </p>

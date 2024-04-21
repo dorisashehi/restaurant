@@ -16,12 +16,13 @@
         background-size: 28%;
         background-repeat: no-repeat;
         background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/green.png);
+        display: none;
 
     }
     .container{
         z-index: 2;
         position: relative;
-        margin: auto;
+
         .contact-header{
             color: #232e3c;
             font-size: 1.5em;
@@ -74,39 +75,11 @@
 
 
 
+@media screen and (min-width:1200px){
+    .contacts-section{
+        .green-image{
+            display: block;
+        }
+    }
 
-// @media screen and (max-width:576px){
-
-
-//     .contacts-section{
-
-//         .green-image{
-//             display: none;
-//         }
-//     }
-
-// }
-// @media screen and (min-width:576px){
-
-//     .contacts-section{
-
-//         .green-image{
-//             display: none;
-//         }
-//     }
-
-
-// }
-
-
-// @media screen and (min-width:992px){
-
-
-//     .contacts-section{
-
-//         .green-image{
-//             display: block;
-//         }
-//     }
-
-// }
+}
