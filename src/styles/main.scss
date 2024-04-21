@@ -10,12 +10,52 @@ body{
         position: fixed;
         text-decoration: none;
         background-color: #ffb82e;
-        padding: 8px;
+        padding: 12px 20px;
         border-radius: 0.5em;
         right: 30px;
         bottom: 15px;
         z-index: 2;
+        i{
+            color: #fff;
+        }
     }
+}
+
+section{padding: 30px 15px;}
+
+p{
+    color: #5e6e82;
+    font-size: 1.2rem;
+    font-family: "Inconsolata";
+}
+h6{
+    color: #000;
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+h2{
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    font-weight: bold;
+}
+h1{
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+}
+.btn.btn-primary{
+    width: fit-content
+}
+.section-header{
+    color: #232e3c;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Inconsolata";
+    margin-bottom: 0px;
+
 }
 
 //layout
@@ -92,25 +132,33 @@ body{
 
 footer{
     background-color: #0b1727;
+    padding: 30px 15px 0px 15px;
 
     .container{
         img{
-            height: 45px;
+            height: 40px;
         }
 
         img.footer-logo{
-            width: 122px;
-            height: 325px;
+            width: 83px;
+            height: 232px;
+            display: none;
         }
         .column-3, .column-4{
+            padding-top: 20px;
             p{
                 color: #525b6a;
+                padding-bottom: 0px;
+                display: flex;
+                font-size: 0.8rem;
                 a{
                     text-decoration: none;
+                    font-size: 0.8rem;
                 }
             }
-            h6{
+            h6.footer-title{
                 color: #fff;
+                font-size: 0.9rem;
             }
         }
 
@@ -118,45 +166,11 @@ footer{
     .copyright{
         background-color: #000;
         color: #5e6e82;
-        font-size: 20px;
+        font-size: 0.9rem;
     }
 }
 
-section{padding: 30px 15px;}
-//paragreph
-p{
-    color: #5e6e82;
-    font-size: 1.2rem;
-    font-family: "Inconsolata";
-}
-h6{
-    color: #000;
-    font-family: "Merriweather";
-    font-weight: bold;
 
-}
-h2{
-    line-height: 1.5;
-    font-size: 1.5rem;
-    font-family: "Merriweather";
-    font-weight: bold;
-}
-h1{
-    line-height: 1.5;
-    font-size: 1.5rem;
-    font-family: "Merriweather";
-}
-.btn.btn-primary{
-    width: fit-content
-}
-.section-header{
-    color: #232e3c;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: "Inconsolata";
-    margin-bottom: 0px;
-
-}
 
 @media screen and (min-width:767px){
     h1{
@@ -164,6 +178,13 @@ h1{
     }
     .collapse:not(.show) {
         display: block;
+    }
+    footer{
+        .container{
+            img.footer-logo{
+                display: block;
+            }
+        }
     }
 }
 @media screen and (min-width:1200px){
@@ -187,108 +208,31 @@ h1{
        font-size: 1.5rem;
 
     }
+    footer{
+        padding: 35px 0px 0px;
 
+        .container{
+            img{
+                height: 45px;
+            }
+
+            .column-3, .column-4{
+                p{
+                    font-size: 1rem;
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+                h6.footer-title{
+                    font-size: 1rem;
+                }
+            }
+
+        }
+
+        .copyright{
+            font-size: 1rem;
+        }
+    }
 
 }
-
-// @media screen and (max-width:576px){
-//     .btn-outline-primary, .btn-primary{
-//         padding: 12px 19px;
-//         font-size: 10px;
-//     }
-
-//     h1{
-//         font-size: 1.5rem;
-//     }
-
-//     p{
-//         font-size: 1.1rem;
-//     }
-
-//     h2{
-//         font-size: 1.4rem;
-//     }
-//     h3{
-//         font-size: 1.4rem;
-//     }
-
-//     footer{
-//         .container{
-//             .column-1{
-//                 display: none;
-//             }
-//         }
-//         .footer-text{
-//             text-align: left;
-//         }
-//     }
-
-// }
-
-
-// @media screen and (min-width:576px){
-//     .btn-outline-primary, .btn-primary{
-//         padding: 12px 19px;
-//         font-size: 10px;
-//     }
-
-//     h1{
-//         font-size: 1.5rem;
-//     }
-
-//     p{
-//         font-size: 1.1rem;
-//     }
-
-//     h2{
-//         font-size: 1.4rem;
-//     }
-//     h3{
-//         font-size: 1.4rem;
-//     }
-
-//     footer{
-//         .container{
-//             .column-1{
-//                 display: none;
-//             }
-//         }
-//         .footer-text{
-//             text-align: left;
-//         }
-//     }
-
-
-// }
-
-// @media screen and (min-width:992px){
-//     footer{
-//         .container{
-//             .column-1{
-//                 display: block;
-//             }
-//         }
-//     }
-
-//     .btn-outline-primary, .btn-primary{
-//         padding: 10px 32px;
-//         font-size: 15px;
-//     }
-
-//     h1{
-//         font-size: 2.4rem;
-//     }
-
-//     p{
-//         font-size: 1.2rem;
-//     }
-
-//     h2{
-//         font-size: 2.4rem;
-//     }
-//     h3{
-//         font-size: 1.4rem;
-//     }
-
-
-// }
