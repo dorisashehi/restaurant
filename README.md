@@ -1,4 +1,4 @@
-# Restaurant
+# [Restaurant](https://dorisashehi.github.io/restaurant/)
 
 Task to create a website for a restaurant
 
