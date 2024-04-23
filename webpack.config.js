@@ -10,7 +10,7 @@ module.exports = {
         path:path.resolve(__dirname, 'dist'),
         filename: '[name][contenthash].js',  //the name al the js file after all modules compiled together
         clean: true, //clean before generate a new js file
-        assetModuleFilename: '[name][ext]' //its for image names at dist
+        assetModuleFilename: 'images/[name][ext]' //its for image names at dist
     },
     plugins:[
         new HtmlWebpackPlugin({
