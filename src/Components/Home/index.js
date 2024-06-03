@@ -1,8 +1,8 @@
-import plate from '../../assets/plate.png'
+import plate from '../../assets/images/plate.png'
 import { getAbout } from '../About/index.js'
 import {getContacts} from '../Contacts/index.js'
 import getMenu from '../Menu/index.js'
-import '../../assets/yellow-banner.png'
+import '../../assets/images/yellow-banner.png'
 import './style.scss'
 import getModal from '../Modal/index.js'
 
