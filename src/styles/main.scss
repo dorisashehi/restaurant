@@ -33,7 +33,7 @@ section{padding: 30px 15px;}
 
 p{
     color: #5e6e82;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4rem;
     font-family: "Inconsolata";
 }
@@ -67,6 +67,9 @@ h1{
 
 }
 
+section{
+    margin-top: 70px;
+}
 //layout
 #content{
     height: fit-content
@@ -236,7 +239,7 @@ footer{
         font-size: 2.5rem;
     }
     p{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     h2{
         font-size: 2.4rem;

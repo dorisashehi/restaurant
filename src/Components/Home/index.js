@@ -51,4 +51,5 @@ const getHome = () =>{
     getContacts();
     // getModal()
 }
+
 export default getHome
