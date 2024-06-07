@@ -15,6 +15,8 @@ if(currentPage == "home") getHome()
 //     dialog.showModal();
 // })
 
+
+//START ANIMATION OF SECTIONS ONLY ON SCROLL
 document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
