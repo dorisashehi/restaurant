@@ -11,6 +11,7 @@
         background-repeat: no-repeat;
         background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/soup.png);
         animation: show-soup-right 1000ms ease-out forwards;
+        display: none;
     }
 
     @keyframes show-soup-right{
@@ -41,6 +42,8 @@
         height: 150px;
         border-radius: 7em;
     }
+
+
 }
 
 @media screen and (min-width:1200px){

@@ -11,23 +11,22 @@
         width: 100%;
         min-height: 100%;
         top: 0;
-        left: 0;
         background-position: left center;
         background-size: 28%;
         background-repeat: no-repeat;
         background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/green.png);
         display: none;
-        animation: show-green-right 1500ms ease-out;
+        animation: show-green-right 1500ms ease-out forwards;
     }
 
     @keyframes show-green-right{
 
         from{
-            transform: translateX(-100%);
+            left: -200px;
             opacity: 0.5;
         }
         to{
-            transform: translateX(0%);
+            left: 0px;
             opacity: 1;
         }
 
@@ -83,7 +82,23 @@
             color: #4d5969;
             background-color: #ff806e;
             border-color: #ff806e;
+            opacity: 0.7;
         }
+        .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{
+            box-shadow: unset;
+        }
+        .btn-primary.focus, .btn-primary:focus{
+            box-shadow: unset;
+        }
+    }
+}
+
+.contacts-section{
+    display: flex;
+    justify-content: center;
+    .container{
+        margin-left: unset;
+        margin-right: unset;
     }
 }
 

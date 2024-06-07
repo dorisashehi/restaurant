@@ -73,7 +73,7 @@ h1{
 }
 
 .navbar{
-    z-index: 3;
+    z-index: 5;
     padding: 17px 0px;
 
     .navbar-brand {
@@ -83,12 +83,13 @@ h1{
         }
     }
     .navbar-collapse{
-        padding: 0px 20px;
+        padding: 0px 20px 18px 20px;
     }
+
     .navbar-collapse.show{
-        padding: 15px 24px;
-        margin-top: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.7);
+        // padding: 15px 24px;
+        // margin-top: 10px;
+        // border-top: 1px solid rgba(255, 255, 255, 0.7);
     }
     .navbar-toggler:focus{
         box-shadow: 0 0 0 2px;
@@ -125,8 +126,9 @@ h1{
 
 .btn-primary:hover, :not(.btn-check) + .btn:active {
     color: #4d5969;
-    background-color: #ffb82e;
-    border-color: #ffb421;
+    background-color: #ffc554;
+    border-color: #ffc554;
+    opacity: 0.7;
 }
 
 .btn-outline-primary, .btn-primary {
@@ -206,8 +208,6 @@ footer{
     }
 }
 
-
-
 @media screen and (min-width:767px){
     h1{
         font-size: 2rem;
@@ -243,6 +243,10 @@ footer{
     h6{
        font-size: 1rem;
 
+    }
+
+    section{
+        margin-top: 100px;
     }
     footer{
         padding: 35px 0px 0px;
