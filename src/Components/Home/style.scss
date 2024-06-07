@@ -34,16 +34,51 @@
             img.plate{
                 position: relative;
                 width: 250px;
+                animation: show-left 1000ms ease-out;
             }
+
+            @keyframes show-left {
+
+                from{
+
+                    transform: translateX(-100%) rotate(-50deg);
+                    opacity: 0.5;
+
+                }
+                to{
+
+                    transform: translateX(0%) rotate(0deg);
+                    opacity: 1;
+
+                }
+
+            }
+
+
         }
         .column-right{
             margin: auto;
             order: 1;
             .row{
 
+                animation: show-in 1000ms ease-in forwards;
+
                 .introduction-header{
                     text-align: center;
                     font-size: 1.5rem;
+                    line-height: 3rem;
+                }
+                @keyframes show-in {
+                   from{
+
+                    opacity: 0;
+                   }
+                   to{
+                    opacity: 1;
+                    transform: translateY(-50px);
+
+                   }
+
                 }
                 .introduction{
                     display: none;
@@ -114,7 +149,7 @@
         .row{
             .column-left{
                 img.plate{
-                    width: 60%;
+                    width: 70%;
                     top: 5em;
                 }
             }
@@ -125,7 +160,8 @@
                         font-size: 2.5rem;
                     }
                     .introduction{
-                        font-size: 1.3rem;
+                        font-size: 1rem;
+                        line-height: 1.4rem;
                     }
                 }
             }

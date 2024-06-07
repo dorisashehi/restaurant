@@ -1,5 +1,6 @@
 // Import our custom CSS
 import './styles/main.scss'
+import './assets/images/pngfood2.png'
 
 import getHome from './Components/Home/index';
 
