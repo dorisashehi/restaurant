@@ -9,7 +9,7 @@ const getMenu = () => {
 
         <section class="menu-section" id="menu">
 
-            <div class="row text-center mb-5">
+            <div class="row text-center animate mb-5">
                 <p class="section-header">Menu</p>
                 <h2 class="contact-title">Taste Our Foods & Enjoy</h2>
             </div>
@@ -23,8 +23,8 @@ const getMenu = () => {
 
             <div class="container menu">
 
-                <div class="egg-image"></div>
-                <div class="bread-image"></div>
+                <div class="egg-image animate"></div>
+                <div class="bread-image animate"></div>
 
                 <div class="row mt-5">
                     <div class="columns-container"></div>

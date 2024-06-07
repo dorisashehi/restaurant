@@ -29,7 +29,13 @@
         background-size: 16%;
         background-position: right top;
         right: 0px;
-        animation: show-img 1000ms ease-out forwards;
+
+    }
+
+
+    .egg-image.in-view{
+        animation: show-img 1500ms ease-out forwards;
+
     }
 
     @keyframes show-img {
@@ -55,7 +61,10 @@
         left: 0px;
         display: none;
         bottom: 0px;
-        animation: show-bread-img 1000ms ease-out forwards;
+    }
+
+    .bread-image.in-view{
+        animation: show-bread-img 1500ms ease-out forwards;
     }
 
     @keyframes show-bread-img {
@@ -93,10 +102,10 @@
     }
 }
 #menu{
-    .text-center{
-        animation: show-in 1000ms ease-in forwards;
-    }
 
+    .text-center.in-view{
+        animation: show-in 1500ms ease-in forwards;
+    }
 }
 @media screen and (min-width:767px){
     section.menu-section{

@@ -10,15 +10,15 @@ const getContacts = () => {
     contactsContent.innerHTML = `
 
         <section class="contacts-section d-flex" id="contacts">
-            <div class="green-image"></div>
+            <div class="green-image animate"></div>
             <div class="container">
                 <div class="row text-center mb-5">
-                    <p class="section-header">Location & Timing</p>
-                    <h2 class="contact-title">Contact with us</h2>
+                    <p class="section-header animate">Location & Timing</p>
+                    <h2 class="contact-title animate">Contact with us</h2>
                 </div>
                 <div class="row flex-wrap constacts-content">
 
-                    <div class="card-body col-md-4 col-lg-3 p-5">
+                    <div class="card-body animate col-md-4 col-lg-3 p-5">
                         <p class="card-text mb-3">
                             Av. Paz Soldán 290, San Isidro, Lima 27 - Peru
                         </p>
@@ -30,7 +30,7 @@ const getContacts = () => {
                         </p>
                     </div>
 
-                    <div class="card-body col-md-4 col-lg-3 p-5">
+                    <div class="card-body animate col-md-4 col-lg-3 p-5">
                         <p class="card-title">
                             Hours of service
                         </p>
@@ -52,7 +52,7 @@ const getContacts = () => {
                         </p>
                     </div>
 
-                    <div class="card-body col-md-4 col-lg-3 p-5">
+                    <div class="card-body animate col-md-4 col-lg-3 p-5">
                         <p class="card-title">
                             Telephone support:
                         </p>

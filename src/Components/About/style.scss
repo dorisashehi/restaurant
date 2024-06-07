@@ -10,8 +10,11 @@
         background-size: 31%;
         background-repeat: no-repeat;
         background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/soup.png);
-        animation: show-soup-right 1000ms ease-out forwards;
         display: none;
+    }
+
+    .soup-image.in-view{
+        animation: show-soup-right 1500ms ease-out forwards;
     }
 
     @keyframes show-soup-right{
@@ -28,8 +31,8 @@
 
     }
 
-    .section-header, button, p.subheader, h2, .text-center{
-        animation: show-in 1000ms ease-in forwards;
+    .section-header.in-view, button.in-view, p.subheader.in-view, h2.in-view, .text-center.in-view{
+        animation: show-in 1500ms ease-in forwards;
     }
 
     h6{

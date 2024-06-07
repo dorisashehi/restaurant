@@ -18,10 +18,15 @@
         display: none;
         animation: show-green-right 1500ms ease-out forwards;
     }
+
+    .green-image.in-view{
+        animation: show-green-right 1500ms ease-out forwards;
+    }
+
     @keyframes show-green-right{
 
         from{
-            left: -200px;
+            left: -100px;
             opacity: 0.5;
         }
         to{
@@ -91,7 +96,7 @@
         .btn-primary.focus, .btn-primary:focus{
             box-shadow: unset;
         }
-        .section-header, .contact-title, .constacts-content .card-body{
+        .section-header.in-view, .contact-title.in-view, .constacts-content .card-body.in-view{
             animation: show-in 1000ms ease-in forwards;
 
         }

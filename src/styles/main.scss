@@ -153,9 +153,13 @@ footer{
     padding: 30px 15px 0px 15px;
 
     .footer-logo{
-        animation: show-footer-img 1000ms ease-out forwards;
         position: relative;
     }
+
+    .footer-logo.in-view{
+        animation: show-footer-img 1000ms ease-out forwards;
+    }
+
     @keyframes show-footer-img{
         from{
             bottom: -50px;
