@@ -15,8 +15,15 @@ body{
         right: 30px;
         bottom: 15px;
         z-index: 2;
+
         i{
             color: #fff;
+        }
+
+        &:hover{
+            transition: transform .5s linear;
+            transform: scale(1.1);
+
         }
     }
 }
