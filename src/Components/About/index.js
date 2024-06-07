@@ -9,19 +9,20 @@ const getAbout = () => {
     aboutContent.innerHTML = `
 
         <section class="about-section" id="about">
-            <div class="soup-image"></div>
+
             <div class="container">
                 <div class="row">
                     <div class="column-left col-12 col-md-12 col-lg-12 col-xl-6">
                         <p class="section-header">About Us</p>
                         <h2>Who Are We?</h2>
-                        <p>We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
+                        <p class="subheader">We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
                         <button class="btn btn-primary mt-3" type="submit">Learn More</button>
                         <div class="row flex-wrap team-content mt-5"></div>
                     </div>
 
                 </div>
             </div>
+            <div class="soup-image"></div>
         <section>
 
     `;
@@ -43,15 +44,16 @@ const showTeam = () => {
         teamImage.classList.add("team");
 
         const teamName = document.createElement("h6");
-        teamName.classList.add("mt-3");
         teamName.textContent = team.name
 
         const teamProffesion = document.createElement("p");
+        teamProffesion.classList.add("mt-3");
         teamProffesion.textContent = team.profession
 
         teamContainer.appendChild(teamImage);
-        teamContainer.appendChild(teamName);
         teamContainer.appendChild(teamProffesion);
+        teamContainer.appendChild(teamName);
+
         column.appendChild(teamContainer);
 
     });

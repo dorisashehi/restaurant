@@ -6,17 +6,34 @@
         width: 100%;
         min-height: 100%;
         top: 0;
-        left: 0;
         background-position: right center;
-        background-size: 40%;
+        background-size: 31%;
         background-repeat: no-repeat;
         background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/soup.png);
-        display: none;
+        animation: show-soup-right 1000ms ease-out forwards;
+    }
+
+    @keyframes show-soup-right{
+
+        from{
+
+            right: -900px;
+            opacity: 0.5;
+        }
+        to{
+            right: 0px;
+            opacity: 1;
+        }
 
     }
+
+    .section-header, button, p.subheader, h2, .text-center{
+        animation: show-in 1000ms ease-in forwards;
+    }
+
     h6{
         color: #232e3c;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
     }
     .team{

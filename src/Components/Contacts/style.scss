@@ -17,8 +17,22 @@
         background-repeat: no-repeat;
         background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/green.png);
         display: none;
+        animation: show-green-right 1500ms ease-out;
+    }
+
+    @keyframes show-green-right{
+
+        from{
+            transform: translateX(-100%);
+            opacity: 0.5;
+        }
+        to{
+            transform: translateX(0%);
+            opacity: 1;
+        }
 
     }
+
     .container{
         z-index: 2;
         position: relative;

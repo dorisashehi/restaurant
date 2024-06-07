@@ -43,13 +43,10 @@
 
                     transform: translateX(-100%) rotate(-50deg);
                     opacity: 0.5;
-
                 }
                 to{
-
                     transform: translateX(0%) rotate(0deg);
                     opacity: 1;
-
                 }
 
             }
@@ -70,7 +67,6 @@
                 }
                 @keyframes show-in {
                    from{
-
                     opacity: 0;
                    }
                    to{
@@ -137,7 +133,7 @@
     }
 
     .hero{
-        min-height: 800px;
+        min-height: 100vh;
         padding-left: 0px;
         .hero-image{
             display: block;

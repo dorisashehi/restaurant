@@ -5,6 +5,7 @@
 
 body{
     position: relative;
+    overflow-x: hidden;
 
     .scroll-top{
         position: fixed;
@@ -33,6 +34,7 @@ section{padding: 30px 15px;}
 p{
     color: #5e6e82;
     font-size: 1.2rem;
+    line-height: 1.4rem;
     font-family: "Inconsolata";
 }
 h6{
@@ -110,10 +112,15 @@ h1{
 }
 
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
     color: #4d5969;
     background-color: #ffc554;
     border-color: #ffc554;
+    box-shadow: unset;
+}
+
+.btn-outline-primary:focus{
+    box-shadow: unset;
 }
 
 .btn-primary:hover, :not(.btn-check) + .btn:active {
@@ -121,10 +128,12 @@ h1{
     background-color: #ffb82e;
     border-color: #ffb421;
 }
+
 .btn-outline-primary, .btn-primary {
     border-color: #ffc554;
     color: #ffc554;
 }
+
 .btn-outline-primary, .btn-primary{
     text-transform: uppercase;
     font-weight: bold;
@@ -140,6 +149,21 @@ h1{
 footer{
     background-color: #0b1727;
     padding: 30px 15px 0px 15px;
+
+    .footer-logo{
+        animation: show-footer-img 1000ms ease-out forwards;
+        position: relative;
+    }
+    @keyframes show-footer-img{
+        from{
+            bottom: -50px;
+            opacity: 0.5;
+        }
+        to{
+            bottom: 0px;
+            opacity: 1;
+        }
+    }
 
     .container{
         img{
@@ -170,10 +194,15 @@ footer{
         }
 
     }
+    .container{
+        z-index: 1;
+    }
     .copyright{
         background-color: #000;
         color: #5e6e82;
         font-size: 0.9rem;
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -203,7 +232,7 @@ footer{
         font-size: 2.5rem;
     }
     p{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     h2{
         font-size: 2.4rem;
@@ -212,7 +241,7 @@ footer{
         font-size: 2.4rem;
     }
     h6{
-       font-size: 1.5rem;
+       font-size: 1rem;
 
     }
     footer{
