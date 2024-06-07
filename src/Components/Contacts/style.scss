@@ -18,7 +18,6 @@
         display: none;
         animation: show-green-right 1500ms ease-out forwards;
     }
-
     @keyframes show-green-right{
 
         from{
@@ -31,6 +30,8 @@
         }
 
     }
+
+
 
     .container{
         z-index: 2;
@@ -89,6 +90,10 @@
         }
         .btn-primary.focus, .btn-primary:focus{
             box-shadow: unset;
+        }
+        .section-header, .contact-title, .constacts-content .card-body{
+            animation: show-in 1000ms ease-in forwards;
+
         }
     }
 }
