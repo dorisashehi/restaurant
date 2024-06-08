@@ -9,7 +9,7 @@ const getMenu = () => {
 
         <section class="menu-section" id="menu">
 
-            <div class="row text-center animate mb-5">
+            <div class="row text-center animate">
                 <p class="section-header">Menu</p>
                 <h2 class="contact-title">Taste Our Foods & Enjoy</h2>
             </div>

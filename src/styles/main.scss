@@ -29,11 +29,15 @@ body{
     }
 }
 
-section{padding: 30px 15px;}
+section{
+    padding: 30px 15px;
+    margin-top: 50px;
+
+}
 
 p{
     color: #5e6e82;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.4rem;
     font-family: "Inconsolata";
 }
@@ -41,7 +45,13 @@ h6{
     color: #000;
     font-family: "Merriweather";
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+
+}
+h3{
+    font-size: 1rem;
+    font-family: "Merriweather";
+    font-weight: bold;
 
 }
 h2{
@@ -66,10 +76,6 @@ h1{
     margin-bottom: 0px;
 
 }
-
-section{
-    margin-top: 70px;
-}
 //layout
 #content{
     height: fit-content
@@ -82,11 +88,8 @@ section{
     .navbar-brand {
         flex: 0 0 20%;
         img{
-            height: 45px;
+            height: 35px;
         }
-    }
-    .navbar-collapse{
-        padding: 0px 20px 18px 20px;
     }
 
     .navbar-collapse.show{
@@ -99,13 +102,14 @@ section{
     }
     .container{
         padding: 0px 20px;
+        align-items: end;
     }
     .navbar-nav{
         .nav-item{
             padding-right: 20px;
         }
         a.nav-link{
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: rgba(255,255,255,.7) !important;
             font-family: "Inconsolata";
         }
@@ -176,7 +180,7 @@ footer{
 
     .container{
         img{
-            height: 40px;
+            height: 35px;
         }
 
         img.footer-logo{
@@ -244,23 +248,38 @@ footer{
     h2{
         font-size: 2.4rem;
     }
-    h1{
-        font-size: 2.4rem;
-    }
+
     h6{
        font-size: 1rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
 
     }
 
-    section{
-        margin-top: 100px;
+    .navbar{
+        .navbar-brand {
+            img{
+                height: 40px;
+            }
+        }
+        .navbar-nav{
+            a.nav-link{
+                font-size: 1.2rem;
+            }
+        }
     }
+
+
+
+
     footer{
         padding: 35px 0px 0px;
 
         .container{
             img{
-                height: 45px;
+                height: 40px;
             }
 
             .column-3, .column-4{
@@ -280,6 +299,19 @@ footer{
         .copyright{
             font-size: 1rem;
         }
+    }
+
+    section{
+        margin-top: 30px;
+    }
+}
+
+
+
+@media screen and (min-width:1400px){
+
+    section{
+        margin-top: 100px;
     }
 
 }

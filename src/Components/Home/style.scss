@@ -1,7 +1,8 @@
 //home style
 
 #content{
-    margin-top: 145px;
+    padding-top: 145px;
+    overflow-x: hidden;
     .hero-section{
         padding: 30px 15px;
         position: relative;
@@ -128,18 +129,14 @@
 
 }
 
-@media screen and (min-width:768px){
-    #content{
-        margin-top: 230px;
-    }
-
-}
 @media screen and (min-width:1200px){
 
     #content{
-        margin-top: 80px;
+        padding-top: 0px;
+
         .hero-section{
             padding: 0px;
+            margin-top: 0px;
         }
     }
 
@@ -178,9 +175,10 @@
         }
     }
 
+}
+@media screen and (min-width:1400px){
     section.hero-section{
         padding: 0px;
         min-height: 100vh;
     }
-
 }

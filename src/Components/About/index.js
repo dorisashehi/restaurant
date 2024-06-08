@@ -12,7 +12,7 @@ const getAbout = () => {
 
             <div class="container">
                 <div class="row">
-                    <div class="column-left col-12 col-md-12 col-lg-12 col-xl-6">
+                    <div class="column-left col-12 col-md-12 col-lg-8 col-xl-6">
                         <p class="section-header animate">About Us</p>
                         <h2 class="animate">Who Are We?</h2>
                         <p class="subheader animate">We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>

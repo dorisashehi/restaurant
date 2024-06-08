@@ -138,8 +138,12 @@
             display: block;
         }
     }
+    section.menu-section{
+        padding-top: 0px;
+    }
     .menu{
         ul.list{
+            font-size: 1.4rem;
             .item{
                 span{
                     display: block;
