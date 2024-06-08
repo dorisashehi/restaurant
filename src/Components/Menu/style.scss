@@ -42,10 +42,12 @@
 
         from{
             opacity: 0;
+            transform: scale(.2);
+            transform-origin: right top;
         }
         to{
-            transform: translateY(2px);
-            transform: translateX(-5px);
+            transform: scale(1);
+            transform-origin: right top;
             opacity: 1;
         }
 
@@ -58,6 +60,7 @@
         height: 12%;
         background-repeat: no-repeat;
         background-size: 29%;
+        background-position: left bottom;
         left: 0px;
         display: none;
         bottom: 0px;
@@ -71,10 +74,12 @@
 
         from{
             opacity: 0;
+            transform: scale(.2);
+            transform-origin: left bottom;
         }
         to{
-            transform: translateY(-20px);
-            transform: translateX(15px);
+            transform: scale(1);
+            transform-origin: left bottom;
             opacity: 1;
         }
 
